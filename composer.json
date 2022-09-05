@@ -1,0 +1,24 @@
+{
+    "name": "osynapsy.net/osynapsy-ocl-chart-gchart",
+    "version": "0.1",
+    "homepage": "http://www.osynapsy.net/ocl-chart-gchart",
+    "type": "library",
+    "description": "Ocl gchart component",
+    "keywords": ["Osynapsy", "GChart component library"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pietro Celeste",
+            "email": "p.celeste@osynapsy.net",
+            "homepage": "https://github.com/osynapsy/osynapsy-ocl-chart-gchart/wiki"
+        }
+    ],
+    "require": {
+        "php" : ">=7.2.0"
+    },
+    "autoload" : {
+        "psr-4": {
+            "Osynapsy\\Ocl\\Chart\\GChart\\": "src/"
+        }
+    }
+}
