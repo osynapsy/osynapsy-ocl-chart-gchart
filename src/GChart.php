@@ -12,14 +12,14 @@
 namespace Osynapsy\Ocl\Chart\GChart;
 
 use Osynapsy\Html\Tag;
-use Osynapsy\Html\Component;
+use Osynapsy\Html\Component\AbstractComponent;
 
 /**
  * Description of ChartEJS
  *
  * @author Pietro Celeste <p.celeste@spinit.it>
  */
-class GChart extends Component
+class GChart extends AbstractComponent
 {
     private $columns = [];
     private $rows = [];
@@ -30,12 +30,12 @@ class GChart extends Component
     {
         parent::__construct('div', $id);
         $this->type = $type;
-        $this->att('class','OclChartGoogle');
+        $this->addClass('OclChartGoogle');
         $this->setOption('title', $title);
         $this->requireJs('//www.gstatic.com/charts/loader.js');
     }
 
-    public function __build_extra__()
+    public function preBuild()
     {
         $script = $this->add(new Tag('script'));
         $script->add("document.addEventListener('DOMContentLoaded',function() {".PHP_EOL);
