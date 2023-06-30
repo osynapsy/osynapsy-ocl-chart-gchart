@@ -1,6 +1,6 @@
 {
     "name": "osynapsy/osynapsy-ocl-chart-gchart",
-    "version": "0.1",
+    "version": "0.2",
     "homepage": "http://www.osynapsy.net/ocl-chart-gchart",
     "type": "library",
     "description": "Ocl gchart component",
