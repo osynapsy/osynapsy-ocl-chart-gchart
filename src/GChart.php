@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Osynapsy\Ocl\Chart\GChart;
+namespace Osynapsy\Ocl\Chart;
 
 use Osynapsy\Html\Tag;
 use Osynapsy\Html\Component\AbstractComponent;
